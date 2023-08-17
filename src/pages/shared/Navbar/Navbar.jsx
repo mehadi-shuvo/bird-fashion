@@ -10,7 +10,7 @@ const Navbar = () => {
     
     </>
     return (
-        <div className='w-full bg-[#0000002f] sticky top-0 left-0'>
+        <div className='w-full bg-[#0000002f]'>
             <div className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">

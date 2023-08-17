@@ -4,7 +4,7 @@ import Navbar from '../pages/shared/Navbar/Navbar';
 
 const Main = () => {
     return (
-        <div>
+        <div className=''>
             <div className='sticky top-0 left-0'>
                 <Navbar/>
             </div>

@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.banner1{
+    background-image: url(./assets/banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner2{
+    background-image: url(./assets/banner3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner3{
+    background-image: url(./assets/banner4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner4{
+    background-image: url(./assets/banner5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner{
+    position: relative;
+    z-index: 111;
+}
+
+.banner::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.my-btn{
+    background-color: #2AB3FD;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid #2AB3FD;
+    
+
+}
+.my-btn:hover{
+    background-color: transparent;
+    border: 1px solid #2AB3FD;
+    color: #2AB3FD;
+    transition: all ease-out 0.4s;
+}
