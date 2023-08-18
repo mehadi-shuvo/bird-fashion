@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
     const routes=<>
@@ -10,8 +11,8 @@ const Navbar = () => {
     
     </>
     return (
-        <div className='w-full bg-[#0000002f]'>
-            <div className="navbar">
+        <div className='w-full bg-[#00000080]'>
+            <div className="navbar w-4/5 mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="lg:hidden">
@@ -23,7 +24,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <a className="normal-case text-xl">Bird Fashion</a>
+                    <p className="text-xl uppercase text-black w-16 h-16 font-bold  flex flex-col items-center justify-center"><span className='text-4xl text-[#2ab3fd]'><FaTwitter></FaTwitter></span> Fashion</p>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu-horizontal px-1 gap-3">
