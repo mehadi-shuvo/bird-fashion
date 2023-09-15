@@ -6,7 +6,7 @@ import { visitedAction } from '../../store/visited-slice';
 import { Link } from 'react-router-dom';
 const Card = ({item}) => {
     const dispatch = useDispatch();
-    const {id, title, price, category, image, rating} = item;
+    const {_id, title, price, category, image, rating} = item;
     const detailsHandler=()=>{
         dispatch(visitedAction.userActivity(item));
     }
@@ -19,8 +19,10 @@ const Card = ({item}) => {
                 <p className='text-lg font-semibold'>Price: ${price}</p>
                 <p className='text-lg font-semibold'>Rating: {rating.rate} </p>
                 <div className="card-actions justify-between">
-                    <button className="my-btn">Add to Cart</button>
-                    <Link to={`/${id}`} onClick={detailsHandler} className="my-btn">Details</Link>
+                    <button
+                         
+                        className="my-btn">Add to Cart</button>
+                    <Link to={`/${_id}`} onClick={detailsHandler} className="my-btn">Details</Link>
                 </div>
             </div>
         </div>
