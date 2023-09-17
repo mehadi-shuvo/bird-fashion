@@ -3,6 +3,7 @@ import productsSlice from "./product-slice";
 import visitedSlice from "./visited-slice";
 import categoryProductSlice from "./category-product";
 import { productsApiSlice } from "./products-slice";
+import userSlice from "./userSlice";
 
 
 const store = configureStore({
@@ -11,6 +12,7 @@ const store = configureStore({
         visited: visitedSlice,
         category: categoryProductSlice.reducer,
         [productsApiSlice.reducerPath]: productsApiSlice.reducer,
+        userSlice : userSlice,
     },
     middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(productsApiSlice.middleware),
